@@ -6,6 +6,10 @@
 - Grafana - http://localhost:3000/ - admin/admin - in docker-compose.yml
 - Prometheus - http://localhost:9090/ - in docker-compose.yml
 
+# Java development environment
+
+`sdk list java && sdk current java`
+
 # Setup Maven wrapper
 
 - https://github.com/takari/maven-wrapper
