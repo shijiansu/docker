@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/language-docker-blue)
-![](https://img.shields.io/badge/technology-docker,%20xxx-blue)
+![](https://img.shields.io/badge/technology-docker,%20swarm-blue)
 ![](https://img.shields.io/badge/development%20year-2020-orange)
 ![](https://img.shields.io/badge/contributor-shijian%20su-purple)
 ![](https://img.shields.io/badge/license-MIT-lightgrey)
