@@ -1,7 +1,14 @@
 ![](https://img.shields.io/badge/language-docker-blue)
 ![](https://img.shields.io/badge/technology-docker,%20xxx-blue)
 ![](https://img.shields.io/badge/development%20year-2020-orange)
+![](https://img.shields.io/badge/contributor-shijiansu-purple)
 ![](https://img.shields.io/badge/license-MIT-lightgrey)
+
+![](https://img.shields.io/github/languages/top/shijiansu/docker)
+![](https://img.shields.io/github/languages/count/shijiansu/docker)
+![](https://img.shields.io/github/languages/code-size/shijiansu/docker)
+![](https://img.shields.io/github/repo-size/shijiansu/docker)
+![](https://img.shields.io/github/last-commit/shijiansu/docker?color=red)
 
 --------------------------------------------------------------------------------
 
