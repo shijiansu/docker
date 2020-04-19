@@ -12,6 +12,14 @@
 
 --------------------------------------------------------------------------------
 
+# Docker labs and training
+
+- https://labs.play-with-docker.com/
+- https://training.play-with-docker.com/
+- https://training.play-with-docker.com/alacart/
+
+--------------------------------------------------------------------------------
+
 # Execute all tests in repo
 
 `/bin/bash run-repo-test.sh`
