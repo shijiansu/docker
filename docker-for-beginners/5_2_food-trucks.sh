@@ -8,6 +8,13 @@ docker run -d --name es -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node
 curl 0.0.0.0:9200
 
 cd ./docker/food-trucks
+
+# fix the security issue
+cd ./flask-app 
+# npm audit fix
+npm i --package-lock-only
+cd ..
+
 tree -L 2
 docker build -t prakhar1989/foodtrucks-web .
 docker run -P --rm prakhar1989/foodtrucks-web # depends on es
@@ -50,6 +57,7 @@ exit
 docker run -d --network foodtrucks-net -p 5000:5000 --name foodtrucks-web prakhar1989/foodtrucks-web
 docker container ls
 curl -I 0.0.0.0:5000
+http://localhost:5000/
 
 # clean resource
 docker container stop foodtrucks-web && docker container rm foodtrucks-web
