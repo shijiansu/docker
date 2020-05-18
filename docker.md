@@ -49,3 +49,15 @@ docker run -i -t --name=docker_run centos /bin/bash
 docker run -d --name=docker_run_b centos /bin/bash -c "while true: do echo Hello world; sleep 1; done"
 docker ps
 ```
+
+
+# Cluster环境下的概念
+
+- Swarm
+  - App: App根据复杂程度, 可以使用Single stack或者Multiple stacks
+  - Stack: 一个Stack是一组相互关联的services, 这组service共享依赖, 可被安排在一起运行和扩展
+  - Service: Services实际上是"containers in production". 一个service只能运行一个image, 但是可以运行出同一个image的多个containers. service模式运行一个container和独立运行container相比, 可以在不手工重启container状况下, 通过service更新container的网络, volume等配置
+  - Task && Container: task是swarm中的原子调度单元, 对应运行在一个service中的单个container (理论上Task也可以对应到非container的执行单元如进程上, 但是目前只对应container). 每个Task中有一个对应的container
+- AWS EC2
+  - Task (definition): A task is a logical group of one or more Docker containers that are deployed with specified settings. Define application containers - Image URL, CPU, memory requirement, launch type, network configuration, etc. A running instantiation of a task definition; create before create service
+  - Service: Launch type, network configuration, load balancer, etc. Maintain n running copies (desired count); integrated with ELB, Unhealthy tasks automatically replaced.
