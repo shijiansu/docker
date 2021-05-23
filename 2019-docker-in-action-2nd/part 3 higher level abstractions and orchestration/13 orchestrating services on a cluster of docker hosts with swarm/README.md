@@ -55,4 +55,3 @@ Docker supports several node attributes that can be used as the basis of constra
 - node.role—The node’s role in the cluster, either manager or worker
 - node.labels.<label name>—A label applied to the node by an operator (for example, a node with a zone=public label would have a node attribute of node.labels.zone=public)
 - engine.labels—A set of labels describing key properties of the node and Docker Engine such as Docker version and operating system (for example, engine.labels.operatingsystem==ubuntu 16.04)
-
